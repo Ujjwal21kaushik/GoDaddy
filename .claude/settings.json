@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "readOnlyByDefault": true,
+    "protectedFiles": [
+      "rules/always/safety.md",
+      "hooks/**",
+      ".githooks/**",
+      ".cursor/hooks.json",
+      ".claude/settings.json",
+      ".env*"
+    ]
+  }
+}

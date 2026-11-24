@@ -1,0 +1,25 @@
+{
+  "project": "GoDaddy Hackathon Prototype",
+  "owner": "Ujjwal Kaushik",
+  "phase": "Phase 2: Hackathon Rules & Criteria Ingested",
+  "lastUpdated": "2026-11-25T01:48:00+05:30",
+  "constraints": {
+    "totalTime": "120 minutes",
+    "pitchDuration": "3 minutes",
+    "corePriorities": [
+      "Problem breakdown clarity",
+      "Live working prototype over PPT",
+      "Strict scope creep avoidance",
+      "Edge case handling"
+    ]
+  },
+  "completedMilestones": [
+    "Frontend Vite React directory structure created",
+    "Components folder (Navbar, Footer) created",
+    "Pages folder (Home) created",
+    "Safety rules locked in rules/always/safety.md",
+    "Protection hooks created in hooks/",
+    "Agent universal context and criteria updated"
+  ],
+  "nextMilestone": "Wait for user to provide problem statement, conduct 15-min breakdown, then build UI + backend"
+}

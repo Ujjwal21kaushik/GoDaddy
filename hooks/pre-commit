@@ -1,0 +1,18 @@
+#!/bin/sh
+# Protection hook to prevent accidental modification or deletion of protected paths
+
+PROTECTED_PATHS="rules/always/safety.md hooks/ .githooks/ .cursor/hooks.json .claude/settings.json .env"
+
+for file in $(git diff --cached --name-only); do
+  for protected in $PROTECTED_PATHS; do
+    case "$file" in
+      $protected*)
+        echo "ERROR: Protected path '$file' is staged for commit."
+        echo "Direct modifications to safety rules and hooks are locked."
+        exit 1
+        ;;
+    esac
+  done
+done
+
+exit 0
