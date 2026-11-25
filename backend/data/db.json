@@ -1,396 +1,344 @@
 {
-  "counter": {
-    "id": "counter-main",
-    "name": "Main Canteen Counter",
-    "slotLimit": 20
-  },
   "menu": [
     {
-      "id": "m1",
-      "name": "Samosa (2 pcs)",
-      "category": "Snack",
+      "id": "k1",
+      "name": "Samosa (2 pc)",
+      "cat": "Snacks",
       "price": 25,
-      "stock": 10,
-      "totalInitial": 50,
-      "prepTimeMins": 6,
-      "image": "🥟",
-      "isPopular": true
+      "emoji": "🥟",
+      "img": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80",
+      "desc": "Golden crispy samosas served with tangy mint & tamarind chutney",
+      "prep": 3,
+      "stock": 17,
+      "daily": 80,
+      "low": 5,
+      "popular": true,
+      "veg": true,
+      "available": true,
+      "weekUnits": 560
+    },
+    {
+      "id": "m1",
+      "name": "Veg Deluxe Thali",
+      "cat": "Meals",
+      "price": 90,
+      "emoji": "🍛",
+      "img": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=600&q=80",
+      "desc": "2 butter rotis, dal makhani, paneer sabzi, jeera rice, salad & pickle",
+      "prep": 6,
+      "stock": 20,
+      "daily": 60,
+      "low": 5,
+      "popular": true,
+      "veg": true,
+      "available": true,
+      "weekUnits": 410
     },
     {
       "id": "m2",
-      "name": "Kachori with Chutney",
-      "category": "Snack",
-      "price": 25,
+      "name": "Chole Bhature (2 pc)",
+      "cat": "Meals",
+      "price": 70,
+      "emoji": "🫓",
+      "img": "https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=600&q=80",
+      "desc": "Fluffy golden bhature served with rich spicy Punjabi chole & onion salad",
+      "prep": 5,
       "stock": 20,
-      "totalInitial": 40,
-      "prepTimeMins": 5,
-      "image": "🥠",
-      "isPopular": false
+      "daily": 50,
+      "low": 5,
+      "popular": true,
+      "veg": true,
+      "available": true,
+      "weekUnits": 380
     },
     {
-      "id": "m3",
-      "name": "Aloo Patty",
-      "category": "Snack",
-      "price": 20,
-      "stock": 15,
-      "totalInitial": 35,
-      "prepTimeMins": 4,
-      "image": "🥪",
-      "isPopular": true
+      "id": "s1",
+      "name": "Crispy Masala Dosa",
+      "cat": "South Indian",
+      "price": 60,
+      "emoji": "🥞",
+      "img": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=600&q=80",
+      "desc": "Crispy butter dosa loaded with aloo masala, hot sambar & coconut chutney",
+      "prep": 6,
+      "stock": 20,
+      "daily": 50,
+      "low": 5,
+      "popular": true,
+      "veg": true,
+      "available": true,
+      "weekUnits": 350
     },
     {
-      "id": "m4",
-      "name": "Veg Grilled Sandwich",
-      "category": "Meal",
-      "price": 50,
-      "stock": 12,
-      "totalInitial": 30,
-      "prepTimeMins": 8,
-      "image": "🥪",
-      "isPopular": false
-    },
-    {
-      "id": "m5",
-      "name": "Special Masala Maggi",
-      "category": "Meal",
+      "id": "s2",
+      "name": "Idli Sambar (3 pc)",
+      "cat": "South Indian",
       "price": 40,
-      "stock": 25,
-      "totalInitial": 45,
-      "prepTimeMins": 7,
-      "image": "🍜",
-      "isPopular": true
+      "emoji": "🍘",
+      "img": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80",
+      "desc": "Steamed soft rice idlis dipped in boiling piping hot lentil sambar",
+      "prep": 4,
+      "stock": 20,
+      "daily": 45,
+      "low": 5,
+      "popular": false,
+      "veg": true,
+      "available": true,
+      "weekUnits": 240
     },
     {
-      "id": "m6",
-      "name": "Chole Kulche Combo",
-      "category": "Meal",
-      "price": 65,
-      "stock": 8,
-      "totalInitial": 25,
-      "prepTimeMins": 10,
-      "image": "🍲",
-      "isPopular": true
+      "id": "k2",
+      "name": "Steamed Veg Momos (6 pc)",
+      "cat": "Snacks",
+      "price": 60,
+      "emoji": "🥟",
+      "img": "https://images.unsplash.com/photo-1626776876729-bab4369a5a5c?auto=format&fit=crop&w=600&q=80",
+      "desc": "Thin-layer juicy vegetable momos paired with fiery hot red garlic dip",
+      "prep": 6,
+      "stock": 20,
+      "daily": 50,
+      "low": 5,
+      "popular": true,
+      "veg": true,
+      "available": true,
+      "weekUnits": 330
     },
     {
-      "id": "m7",
-      "name": "Cold Coffee with Ice Cream",
-      "category": "Beverage",
+      "id": "k4",
+      "name": "Special Masala Maggi",
+      "cat": "Snacks",
       "price": 45,
-      "stock": 30,
-      "totalInitial": 40,
-      "prepTimeMins": 3,
-      "image": "🥤",
-      "isPopular": true
+      "emoji": "🍜",
+      "img": "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?auto=format&fit=crop&w=600&q=80",
+      "desc": "Double masala noodles tossed with chopped onions, green peas & tomatoes",
+      "prep": 4,
+      "stock": 20,
+      "daily": 60,
+      "low": 5,
+      "popular": true,
+      "veg": true,
+      "available": true,
+      "weekUnits": 420
     },
     {
-      "id": "m8",
+      "id": "b1",
+      "name": "Veg Cheese Burger",
+      "cat": "Burgers & Rolls",
+      "price": 50,
+      "emoji": "🍔",
+      "img": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80",
+      "desc": "Crispy herb potato patty, melted cheese slice, lettuce & burger sauce",
+      "prep": 5,
+      "stock": 20,
+      "daily": 50,
+      "low": 5,
+      "popular": true,
+      "veg": true,
+      "available": true,
+      "weekUnits": 310
+    },
+    {
+      "id": "b2",
+      "name": "Tandoori Paneer Roll",
+      "cat": "Burgers & Rolls",
+      "price": 65,
+      "emoji": "🌯",
+      "img": "https://images.unsplash.com/photo-1633321702518-7feccafb94d5?auto=format&fit=crop&w=600&q=80",
+      "desc": "Smoky grilled paneer cubes wrapped in layered parotta with mint mayo",
+      "prep": 5,
+      "stock": 20,
+      "daily": 40,
+      "low": 5,
+      "popular": true,
+      "veg": true,
+      "available": true,
+      "weekUnits": 290
+    },
+    {
+      "id": "b3",
+      "name": "Grilled Cheese Sandwich",
+      "cat": "Burgers & Rolls",
+      "price": 45,
+      "emoji": "🥪",
+      "img": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80",
+      "desc": "Golden toasted bread stuffed with molten cheese and spiced capsicum",
+      "prep": 4,
+      "stock": 20,
+      "daily": 40,
+      "low": 5,
+      "popular": false,
+      "veg": true,
+      "available": true,
+      "weekUnits": 230
+    },
+    {
+      "id": "d1",
       "name": "Masala Chai",
-      "category": "Beverage",
+      "cat": "Beverages",
       "price": 15,
-      "stock": 45,
-      "totalInitial": 60,
-      "prepTimeMins": 2,
-      "image": "☕",
-      "isPopular": true
-    }
-  ],
-  "slots": [
-    {
-      "id": "slot-1",
-      "label": "10:00 AM - 10:15 AM",
-      "startMinutes": 600,
-      "endMinutes": 615,
-      "capacity": 20,
-      "booked": 3,
-      "isLunchPeak": false
+      "emoji": "☕",
+      "img": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80",
+      "desc": "Desi kadak chai brewed with ginger, crushed cardamom & lemongrass",
+      "prep": 2,
+      "stock": 0,
+      "daily": 150,
+      "low": 5,
+      "popular": true,
+      "veg": true,
+      "available": false,
+      "weekUnits": 700
     },
     {
-      "id": "slot-2",
-      "label": "10:15 AM - 10:30 AM",
-      "startMinutes": 615,
-      "endMinutes": 630,
-      "capacity": 20,
-      "booked": 3,
-      "isLunchPeak": false
-    },
-    {
-      "id": "slot-3",
-      "label": "10:30 AM - 10:45 AM",
-      "startMinutes": 630,
-      "endMinutes": 645,
-      "capacity": 20,
-      "booked": 2,
-      "isLunchPeak": false
-    },
-    {
-      "id": "slot-4",
-      "label": "10:45 AM - 11:00 AM",
-      "startMinutes": 645,
-      "endMinutes": 660,
-      "capacity": 20,
-      "booked": 3,
-      "isLunchPeak": false
-    },
-    {
-      "id": "slot-5",
-      "label": "11:00 AM - 11:15 AM",
-      "startMinutes": 660,
-      "endMinutes": 675,
-      "capacity": 20,
-      "booked": 0,
-      "isLunchPeak": false
-    },
-    {
-      "id": "slot-6",
-      "label": "11:15 AM - 11:30 AM",
-      "startMinutes": 675,
-      "endMinutes": 690,
-      "capacity": 20,
-      "booked": 0,
-      "isLunchPeak": false
-    },
-    {
-      "id": "slot-7",
-      "label": "11:30 AM - 11:45 AM",
-      "startMinutes": 690,
-      "endMinutes": 705,
-      "capacity": 20,
-      "booked": 3,
-      "isLunchPeak": false
-    },
-    {
-      "id": "slot-8",
-      "label": "11:45 AM - 12:00 PM",
-      "startMinutes": 705,
-      "endMinutes": 720,
-      "capacity": 20,
-      "booked": 2,
-      "isLunchPeak": false
-    },
-    {
-      "id": "slot-9",
-      "label": "12:00 PM - 12:15 PM",
-      "startMinutes": 720,
-      "endMinutes": 735,
-      "capacity": 20,
-      "booked": 2,
-      "isLunchPeak": false
-    },
-    {
-      "id": "slot-10",
-      "label": "12:15 PM - 12:30 PM",
-      "startMinutes": 735,
-      "endMinutes": 750,
-      "capacity": 20,
-      "booked": 1,
-      "isLunchPeak": false
-    },
-    {
-      "id": "slot-11",
-      "label": "12:30 PM - 12:45 PM",
-      "startMinutes": 750,
-      "endMinutes": 765,
-      "capacity": 20,
-      "booked": 2,
-      "isLunchPeak": false
-    },
-    {
-      "id": "slot-12",
-      "label": "12:45 PM - 1:00 PM",
-      "startMinutes": 765,
-      "endMinutes": 780,
-      "capacity": 20,
-      "booked": 16,
-      "isLunchPeak": false
-    },
-    {
-      "id": "slot-13",
-      "label": "1:00 PM - 1:15 PM",
-      "startMinutes": 780,
-      "endMinutes": 795,
-      "capacity": 20,
-      "booked": 19,
-      "isLunchPeak": true
-    },
-    {
-      "id": "slot-14",
-      "label": "1:15 PM - 1:30 PM",
-      "startMinutes": 795,
-      "endMinutes": 810,
-      "capacity": 20,
-      "booked": 14,
-      "isLunchPeak": true
-    },
-    {
-      "id": "slot-15",
-      "label": "1:30 PM - 1:45 PM",
-      "startMinutes": 810,
-      "endMinutes": 825,
-      "capacity": 20,
-      "booked": 0,
-      "isLunchPeak": true
-    },
-    {
-      "id": "slot-16",
-      "label": "1:45 PM - 2:00 PM",
-      "startMinutes": 825,
-      "endMinutes": 840,
-      "capacity": 20,
-      "booked": 1,
-      "isLunchPeak": true
-    },
-    {
-      "id": "slot-17",
-      "label": "2:00 PM - 2:15 PM",
-      "startMinutes": 840,
-      "endMinutes": 855,
-      "capacity": 20,
-      "booked": 3,
-      "isLunchPeak": false
-    },
-    {
-      "id": "slot-18",
-      "label": "2:15 PM - 2:30 PM",
-      "startMinutes": 855,
-      "endMinutes": 870,
-      "capacity": 20,
-      "booked": 2,
-      "isLunchPeak": false
-    },
-    {
-      "id": "slot-19",
-      "label": "2:30 PM - 2:45 PM",
-      "startMinutes": 870,
-      "endMinutes": 885,
-      "capacity": 20,
-      "booked": 1,
-      "isLunchPeak": false
-    },
-    {
-      "id": "slot-20",
-      "label": "2:45 PM - 3:00 PM",
-      "startMinutes": 885,
-      "endMinutes": 900,
-      "capacity": 20,
-      "booked": 0,
-      "isLunchPeak": false
-    },
-    {
-      "id": "slot-21",
-      "label": "3:00 PM - 3:15 PM",
-      "startMinutes": 900,
-      "endMinutes": 915,
-      "capacity": 20,
-      "booked": 3,
-      "isLunchPeak": false
-    },
-    {
-      "id": "slot-22",
-      "label": "3:15 PM - 3:30 PM",
-      "startMinutes": 915,
-      "endMinutes": 930,
-      "capacity": 20,
-      "booked": 2,
-      "isLunchPeak": false
-    },
-    {
-      "id": "slot-23",
-      "label": "3:30 PM - 3:45 PM",
-      "startMinutes": 930,
-      "endMinutes": 945,
-      "capacity": 20,
-      "booked": 0,
-      "isLunchPeak": false
-    },
-    {
-      "id": "slot-24",
-      "label": "3:45 PM - 4:00 PM",
-      "startMinutes": 945,
-      "endMinutes": 960,
-      "capacity": 20,
-      "booked": 0,
-      "isLunchPeak": false
-    },
-    {
-      "id": "slot-25",
-      "label": "4:00 PM - 4:15 PM",
-      "startMinutes": 960,
-      "endMinutes": 975,
-      "capacity": 20,
-      "booked": 2,
-      "isLunchPeak": false
-    },
-    {
-      "id": "slot-26",
-      "label": "4:15 PM - 4:30 PM",
-      "startMinutes": 975,
-      "endMinutes": 990,
-      "capacity": 20,
-      "booked": 3,
-      "isLunchPeak": false
-    },
-    {
-      "id": "slot-27",
-      "label": "4:30 PM - 4:45 PM",
-      "startMinutes": 990,
-      "endMinutes": 1005,
-      "capacity": 20,
-      "booked": 0,
-      "isLunchPeak": false
-    },
-    {
-      "id": "slot-28",
-      "label": "4:45 PM - 5:00 PM",
-      "startMinutes": 1005,
-      "endMinutes": 1020,
-      "capacity": 20,
-      "booked": 1,
-      "isLunchPeak": false
+      "id": "d2",
+      "name": "Cold Coffee with Ice Cream",
+      "cat": "Beverages",
+      "price": 50,
+      "emoji": "🧋",
+      "img": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&q=80",
+      "desc": "Thick creamy blended cold coffee topped with vanilla ice cream scoop",
+      "prep": 3,
+      "stock": 19,
+      "daily": 80,
+      "low": 5,
+      "popular": true,
+      "veg": true,
+      "available": true,
+      "weekUnits": 480
     }
   ],
   "orders": [
     {
-      "orderId": "ORD-101",
-      "token": "T-101",
-      "studentName": "Aarav Sharma",
+      "id": "YR-47TB",
+      "name": "Ujjwal",
+      "slot": 1050,
+      "payment": "UPI",
       "items": [
         {
-          "id": "m1",
-          "name": "Samosa (2 pcs)",
-          "quantity": 2,
-          "price": 25
+          "id": "k1",
+          "name": "Samosa (2 pc)",
+          "price": 25,
+          "qty": 1
         }
       ],
-      "totalAmount": 50,
-      "slotId": "slot-13",
-      "slotLabel": "1:00 PM - 1:15 PM",
-      "status": "Preparing",
-      "estimatedMins": 7,
-      "createdAt": "12:56 PM"
+      "total": 25,
+      "discount": 0,
+      "createdAt": 1795607032644,
+      "status": "confirmed",
+      "history": [
+        {
+          "status": "confirmed",
+          "at": 1795607032644
+        }
+      ],
+      "day": 0,
+      "mine": true,
+      "isFuturePipelineOrder": false,
+      "bulkCookAheadAlert": null
     },
     {
-      "orderId": "ORD-102",
-      "token": "T-102",
-      "studentName": "Rohan Verma",
+      "id": "YR-80SG",
+      "name": "Ujjwal",
+      "slot": 1035,
+      "payment": "UPI",
       "items": [
         {
-          "id": "m8",
-          "name": "Masala Chai",
-          "quantity": 1,
-          "price": 15
+          "id": "d2",
+          "name": "Cold Coffee with Ice Cream",
+          "price": 50,
+          "qty": 1
         }
       ],
-      "totalAmount": 15,
-      "slotId": "slot-13",
-      "slotLabel": "1:00 PM - 1:15 PM",
-      "status": "Ready",
-      "estimatedMins": 2,
-      "createdAt": "12:58 PM"
+      "total": 50,
+      "discount": 0,
+      "createdAt": 1795606537036,
+      "status": "preparing",
+      "history": [
+        {
+          "status": "confirmed",
+          "at": 1795606537036
+        },
+        {
+          "status": "preparing",
+          "at": 1795607060989
+        }
+      ],
+      "day": 0,
+      "mine": true,
+      "isFuturePipelineOrder": false,
+      "bulkCookAheadAlert": null
+    },
+    {
+      "id": "YR-KMQV",
+      "name": "Ujjwal",
+      "slot": 1035,
+      "payment": "UPI",
+      "items": [
+        {
+          "id": "k1",
+          "name": "Samosa (2 pc)",
+          "price": 25,
+          "qty": 2
+        }
+      ],
+      "total": 50,
+      "discount": 0,
+      "createdAt": 1795606409413,
+      "status": "confirmed",
+      "history": [
+        {
+          "status": "confirmed",
+          "at": 1795606409413
+        }
+      ],
+      "day": 0,
+      "mine": true,
+      "isFuturePipelineOrder": false,
+      "bulkCookAheadAlert": null
+    },
+    {
+      "id": "YR-M86K",
+      "name": "Ujjwal",
+      "slot": 1020,
+      "payment": "UPI",
+      "items": [
+        {
+          "id": "d1",
+          "name": "Masala Chai",
+          "price": 15,
+          "qty": 1
+        }
+      ],
+      "total": 15,
+      "discount": 0,
+      "createdAt": 1795605919875,
+      "status": "collected",
+      "history": [
+        {
+          "status": "confirmed",
+          "at": 1795605919875
+        },
+        {
+          "status": "preparing",
+          "at": 1795606201183
+        },
+        {
+          "status": "almost",
+          "at": 1795607201898
+        },
+        {
+          "status": "ready",
+          "at": 1795607202895
+        },
+        {
+          "status": "collected",
+          "at": 1795607204372
+        }
+      ],
+      "day": 0,
+      "mine": true,
+      "isFuturePipelineOrder": false,
+      "bulkCookAheadAlert": null
     }
   ],
-  "unmetDemand": {
-    "m1": 35,
-    "m6": 12
-  },
-  "simulatedTime": "12:50"
+  "missed": [],
+  "bulkAlerts": []
 }
