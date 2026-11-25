@@ -1,10 +1,10 @@
 import React from 'react'
-import Home from './pages/Home.jsx'
 
 function App() {
   return (
-    <div className="app-container">
-      <Home />
+    <div style={{ padding: '40px', fontFamily: 'sans-serif', textAlign: 'center' }}>
+      <h1>CanteenIQ Frontend</h1>
+      <p>Clean slate ready for UI team to build components and pages.</p>
     </div>
   )
 }

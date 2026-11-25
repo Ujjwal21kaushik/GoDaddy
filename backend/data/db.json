@@ -1,0 +1,396 @@
+{
+  "counter": {
+    "id": "counter-main",
+    "name": "Main Canteen Counter",
+    "slotLimit": 20
+  },
+  "menu": [
+    {
+      "id": "m1",
+      "name": "Samosa (2 pcs)",
+      "category": "Snack",
+      "price": 25,
+      "stock": 10,
+      "totalInitial": 50,
+      "prepTimeMins": 6,
+      "image": "🥟",
+      "isPopular": true
+    },
+    {
+      "id": "m2",
+      "name": "Kachori with Chutney",
+      "category": "Snack",
+      "price": 25,
+      "stock": 20,
+      "totalInitial": 40,
+      "prepTimeMins": 5,
+      "image": "🥠",
+      "isPopular": false
+    },
+    {
+      "id": "m3",
+      "name": "Aloo Patty",
+      "category": "Snack",
+      "price": 20,
+      "stock": 15,
+      "totalInitial": 35,
+      "prepTimeMins": 4,
+      "image": "🥪",
+      "isPopular": true
+    },
+    {
+      "id": "m4",
+      "name": "Veg Grilled Sandwich",
+      "category": "Meal",
+      "price": 50,
+      "stock": 12,
+      "totalInitial": 30,
+      "prepTimeMins": 8,
+      "image": "🥪",
+      "isPopular": false
+    },
+    {
+      "id": "m5",
+      "name": "Special Masala Maggi",
+      "category": "Meal",
+      "price": 40,
+      "stock": 25,
+      "totalInitial": 45,
+      "prepTimeMins": 7,
+      "image": "🍜",
+      "isPopular": true
+    },
+    {
+      "id": "m6",
+      "name": "Chole Kulche Combo",
+      "category": "Meal",
+      "price": 65,
+      "stock": 8,
+      "totalInitial": 25,
+      "prepTimeMins": 10,
+      "image": "🍲",
+      "isPopular": true
+    },
+    {
+      "id": "m7",
+      "name": "Cold Coffee with Ice Cream",
+      "category": "Beverage",
+      "price": 45,
+      "stock": 30,
+      "totalInitial": 40,
+      "prepTimeMins": 3,
+      "image": "🥤",
+      "isPopular": true
+    },
+    {
+      "id": "m8",
+      "name": "Masala Chai",
+      "category": "Beverage",
+      "price": 15,
+      "stock": 45,
+      "totalInitial": 60,
+      "prepTimeMins": 2,
+      "image": "☕",
+      "isPopular": true
+    }
+  ],
+  "slots": [
+    {
+      "id": "slot-1",
+      "label": "10:00 AM - 10:15 AM",
+      "startMinutes": 600,
+      "endMinutes": 615,
+      "capacity": 20,
+      "booked": 3,
+      "isLunchPeak": false
+    },
+    {
+      "id": "slot-2",
+      "label": "10:15 AM - 10:30 AM",
+      "startMinutes": 615,
+      "endMinutes": 630,
+      "capacity": 20,
+      "booked": 3,
+      "isLunchPeak": false
+    },
+    {
+      "id": "slot-3",
+      "label": "10:30 AM - 10:45 AM",
+      "startMinutes": 630,
+      "endMinutes": 645,
+      "capacity": 20,
+      "booked": 2,
+      "isLunchPeak": false
+    },
+    {
+      "id": "slot-4",
+      "label": "10:45 AM - 11:00 AM",
+      "startMinutes": 645,
+      "endMinutes": 660,
+      "capacity": 20,
+      "booked": 3,
+      "isLunchPeak": false
+    },
+    {
+      "id": "slot-5",
+      "label": "11:00 AM - 11:15 AM",
+      "startMinutes": 660,
+      "endMinutes": 675,
+      "capacity": 20,
+      "booked": 0,
+      "isLunchPeak": false
+    },
+    {
+      "id": "slot-6",
+      "label": "11:15 AM - 11:30 AM",
+      "startMinutes": 675,
+      "endMinutes": 690,
+      "capacity": 20,
+      "booked": 0,
+      "isLunchPeak": false
+    },
+    {
+      "id": "slot-7",
+      "label": "11:30 AM - 11:45 AM",
+      "startMinutes": 690,
+      "endMinutes": 705,
+      "capacity": 20,
+      "booked": 3,
+      "isLunchPeak": false
+    },
+    {
+      "id": "slot-8",
+      "label": "11:45 AM - 12:00 PM",
+      "startMinutes": 705,
+      "endMinutes": 720,
+      "capacity": 20,
+      "booked": 2,
+      "isLunchPeak": false
+    },
+    {
+      "id": "slot-9",
+      "label": "12:00 PM - 12:15 PM",
+      "startMinutes": 720,
+      "endMinutes": 735,
+      "capacity": 20,
+      "booked": 2,
+      "isLunchPeak": false
+    },
+    {
+      "id": "slot-10",
+      "label": "12:15 PM - 12:30 PM",
+      "startMinutes": 735,
+      "endMinutes": 750,
+      "capacity": 20,
+      "booked": 1,
+      "isLunchPeak": false
+    },
+    {
+      "id": "slot-11",
+      "label": "12:30 PM - 12:45 PM",
+      "startMinutes": 750,
+      "endMinutes": 765,
+      "capacity": 20,
+      "booked": 2,
+      "isLunchPeak": false
+    },
+    {
+      "id": "slot-12",
+      "label": "12:45 PM - 1:00 PM",
+      "startMinutes": 765,
+      "endMinutes": 780,
+      "capacity": 20,
+      "booked": 16,
+      "isLunchPeak": false
+    },
+    {
+      "id": "slot-13",
+      "label": "1:00 PM - 1:15 PM",
+      "startMinutes": 780,
+      "endMinutes": 795,
+      "capacity": 20,
+      "booked": 19,
+      "isLunchPeak": true
+    },
+    {
+      "id": "slot-14",
+      "label": "1:15 PM - 1:30 PM",
+      "startMinutes": 795,
+      "endMinutes": 810,
+      "capacity": 20,
+      "booked": 14,
+      "isLunchPeak": true
+    },
+    {
+      "id": "slot-15",
+      "label": "1:30 PM - 1:45 PM",
+      "startMinutes": 810,
+      "endMinutes": 825,
+      "capacity": 20,
+      "booked": 0,
+      "isLunchPeak": true
+    },
+    {
+      "id": "slot-16",
+      "label": "1:45 PM - 2:00 PM",
+      "startMinutes": 825,
+      "endMinutes": 840,
+      "capacity": 20,
+      "booked": 1,
+      "isLunchPeak": true
+    },
+    {
+      "id": "slot-17",
+      "label": "2:00 PM - 2:15 PM",
+      "startMinutes": 840,
+      "endMinutes": 855,
+      "capacity": 20,
+      "booked": 3,
+      "isLunchPeak": false
+    },
+    {
+      "id": "slot-18",
+      "label": "2:15 PM - 2:30 PM",
+      "startMinutes": 855,
+      "endMinutes": 870,
+      "capacity": 20,
+      "booked": 2,
+      "isLunchPeak": false
+    },
+    {
+      "id": "slot-19",
+      "label": "2:30 PM - 2:45 PM",
+      "startMinutes": 870,
+      "endMinutes": 885,
+      "capacity": 20,
+      "booked": 1,
+      "isLunchPeak": false
+    },
+    {
+      "id": "slot-20",
+      "label": "2:45 PM - 3:00 PM",
+      "startMinutes": 885,
+      "endMinutes": 900,
+      "capacity": 20,
+      "booked": 0,
+      "isLunchPeak": false
+    },
+    {
+      "id": "slot-21",
+      "label": "3:00 PM - 3:15 PM",
+      "startMinutes": 900,
+      "endMinutes": 915,
+      "capacity": 20,
+      "booked": 3,
+      "isLunchPeak": false
+    },
+    {
+      "id": "slot-22",
+      "label": "3:15 PM - 3:30 PM",
+      "startMinutes": 915,
+      "endMinutes": 930,
+      "capacity": 20,
+      "booked": 2,
+      "isLunchPeak": false
+    },
+    {
+      "id": "slot-23",
+      "label": "3:30 PM - 3:45 PM",
+      "startMinutes": 930,
+      "endMinutes": 945,
+      "capacity": 20,
+      "booked": 0,
+      "isLunchPeak": false
+    },
+    {
+      "id": "slot-24",
+      "label": "3:45 PM - 4:00 PM",
+      "startMinutes": 945,
+      "endMinutes": 960,
+      "capacity": 20,
+      "booked": 0,
+      "isLunchPeak": false
+    },
+    {
+      "id": "slot-25",
+      "label": "4:00 PM - 4:15 PM",
+      "startMinutes": 960,
+      "endMinutes": 975,
+      "capacity": 20,
+      "booked": 2,
+      "isLunchPeak": false
+    },
+    {
+      "id": "slot-26",
+      "label": "4:15 PM - 4:30 PM",
+      "startMinutes": 975,
+      "endMinutes": 990,
+      "capacity": 20,
+      "booked": 3,
+      "isLunchPeak": false
+    },
+    {
+      "id": "slot-27",
+      "label": "4:30 PM - 4:45 PM",
+      "startMinutes": 990,
+      "endMinutes": 1005,
+      "capacity": 20,
+      "booked": 0,
+      "isLunchPeak": false
+    },
+    {
+      "id": "slot-28",
+      "label": "4:45 PM - 5:00 PM",
+      "startMinutes": 1005,
+      "endMinutes": 1020,
+      "capacity": 20,
+      "booked": 1,
+      "isLunchPeak": false
+    }
+  ],
+  "orders": [
+    {
+      "orderId": "ORD-101",
+      "token": "T-101",
+      "studentName": "Aarav Sharma",
+      "items": [
+        {
+          "id": "m1",
+          "name": "Samosa (2 pcs)",
+          "quantity": 2,
+          "price": 25
+        }
+      ],
+      "totalAmount": 50,
+      "slotId": "slot-13",
+      "slotLabel": "1:00 PM - 1:15 PM",
+      "status": "Preparing",
+      "estimatedMins": 7,
+      "createdAt": "12:56 PM"
+    },
+    {
+      "orderId": "ORD-102",
+      "token": "T-102",
+      "studentName": "Rohan Verma",
+      "items": [
+        {
+          "id": "m8",
+          "name": "Masala Chai",
+          "quantity": 1,
+          "price": 15
+        }
+      ],
+      "totalAmount": 15,
+      "slotId": "slot-13",
+      "slotLabel": "1:00 PM - 1:15 PM",
+      "status": "Ready",
+      "estimatedMins": 2,
+      "createdAt": "12:58 PM"
+    }
+  ],
+  "unmetDemand": {
+    "m1": 35,
+    "m6": 12
+  },
+  "simulatedTime": "12:50"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "canteeniq-backend",
+  "version": "1.0.0",
+  "description": "Backend API for CanteenIQ Rush Hour Queue Buster",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "generate-data": "node data-generator.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^4.22.3"
+  }
+}
