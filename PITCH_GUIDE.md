@@ -1,35 +1,89 @@
 # GoDaddy Hackathon — 3-Minute Winning Pitch Guide
+## Theme: The Human-AI Collaborative Engineering Process
 
-## Pitch Order & Timing (Total: 180 Seconds)
+> **Judge's Focus:** Not just *"what features did you code"*, but **"HOW did you use AI as a high-velocity engineering peer?"** — Process, governance, cross-questioning, edge-case debate, and disciplined execution.
 
-### 0:00 - 0:30 (30s): The Problem & User Identification
-- **Say:** "Hi judges. At 1:00 PM, over 400 college students rush into our canteen with just one counter. Half of them wait 15–20 minutes, some give up and walk away hungry, fast-moving samosas run out, while other cooked food goes straight to waste. This is the single-counter bottleneck."
-- **Visual:** Show empty counter vs. rush statistic on screen.
+---
 
-### 0:30 - 1:00 (30s): The Data Insight & AI Forecasting (Required Criterion)
-- **Say:** "Before writing code, we generated and analyzed 30 days of synthetic order data across 5,500+ records.
-- **The Core Insight:** Lunch demand is compressed into 15-minute bursts. Fridays see a **125% rush multiplier** on Samosas and Chai.
-- **AI Solution:** Our Time-Series Forecasting model calculates day-of-week safety buffers (Monday to Saturday) so the chef knows the exact prep target in advance without spoilage."
-- **Visual:** Toggle to **Owner ➔ Demand Intelligence** tab and show the Day-by-Day Forecast table and Safety Buffers.
+## ⏱️ Pitch Timeline & Script (180 Seconds Total)
 
-### 1:00 - 2:00 (60s): The Live Demo & Key Edge Cases (The Wow Factor)
-- **Action 1: Student 3-Tap Flow & Continuous Stepper**
-  - Select Samosa, pick a 15-minute slot, and place order.
-  - Show the live horizontal gradient stepper (`Confirmed` ➔ `Preparing` ➔ `Almost Ready` ➔ `Ready` ➔ `Collected`).
-- **Action 2: The Gate Refusal Test (The Judge's Trap)**
-  - Attempt to book a full slot (capped at 20 orders).
-  - Show gate refusal + instant auto-shift recommendation to the next available slot.
-- **Action 3: The Dual-Bucket Inventory Rule (Our Secret Weapon)**
-  - Explain: *"If a student pre-orders 50 samosas for 7:00 PM at 4:30 PM, traditional carts dumbly set shelf stock to 0. CanteenIQ's Dual-Bucket isolates immediate walk-in stock from future kitchen pipeline batches, so 4:30 walk-ins never starve."*
-- **Action 4: Kitchen KDS & Overdue Order Blacklist**
-  - Show Kitchen KDS updating status in real-time.
-  - Show the **Uncollected Overdue Alert (>30 mins past slot)** on the Owner screen with the one-click **"Blacklist & Restock"** action.
+---
 
-### 2:00 - 2:40 (40s): Best Prompt & What AI Got Wrong (Required Criterion)
-- **Best Prompt:** *"Design a concurrent dual-bucket inventory and capacity-gated slot booking algorithm that enforces a hard max of 20 orders per 15-minute slot, auto-shifts overflow, and isolates immediate shelf stock from advance pre-orders."*
-- **What AI Got Wrong:**
-  - *"Initially, the AI deducted stock immediately for all future slots, causing walk-in students to see 'Out of Stock' even when fresh food was sitting on the counter. We corrected this by architecting the Dual-Bucket threshold: orders within 45 minutes consume shelf stock, while orders past 45 minutes schedule a kitchen cook-ahead batch."*
+### Phase 1: Foundation & AI Governance (0:00 - 0:35 · 35 Seconds)
+*Focus: Setting rules, hooks, and treating AI as an engineering peer, not a lazy code-generator.*
 
-### 2:40 - 3:00 (20s): What We Would Do Next & Wrap Up
-- **Next Steps:** WhatsApp automated pickup alerts when token is marked 'Ready', and an IoT token display screen above the counter.
-- **Closing:** "CanteenIQ kills the queue, predicts food preparation, and ensures no student wastes their lunch break. Thank you!"
+* **What to Say:**
+  > "Good morning judges. In hackathons, most people jump straight into prompting AI and end up in 'hallucination debt'. We took a fundamentally different approach: **Disciplined Human-AI Governance**.
+  > 
+  > Before writing our first feature prompt, I established strict guardrails:
+  > 1. **Safety Rules (`rules/always/safety.md`)**: Hard boundaries on what AI can and cannot touch.
+  > 2. **Git & State Hooks**: Preventing silent regressions and unauthorized file overwrites.
+  > 3. **Single Source of Truth (`agent/CONTEXT.md`)**: A living contract where every architectural decision, counter constraint, and slot threshold was documented.
+  > 
+  > I didn't treat AI as a magic code generator. I treated it as a **Staff Software Engineer who needed rigorous requirement scoping and cross-examination**."
+
+---
+
+### Phase 2: Problem Breakdown & Mutual Cross-Questioning (0:35 - 1:15 · 40 Seconds)
+*Focus: Breaking down the bottleneck and the back-and-forth debate with AI.*
+
+* **What to Say:**
+  > "We then broke down the **Single Counter Rush Hour** problem together. 
+  > 
+  > I challenged the AI: *'A campus canteen has 400 students rushing at 1:00 PM, but physically only one counter window. How do we kill the queue mathematically?'*
+  > 
+  > The AI cross-questioned my assumption: It pointed out that adding counter staff doesn't work if peak demand is spiky. To prove it, AI synthesized 30 days of order data across 5,500+ records. 
+  > 
+  > The data revealed a stark reality: **48.3% of total lunch volume is compressed into a single 15-minute window**. That gave us our technical consensus: **15-minute time slots with a hard cap of 20 orders** and a strict Gate Refusal Test."
+
+---
+
+### Phase 3: The Edge-Case Battles & Consensus (1:15 - 2:15 · 60 Seconds)
+*Focus: Real edge cases you threw at the AI, debating the trade-offs, and co-designing the solution.*
+
+* **What to Say:**
+  > "The real test of our Human-AI interaction was **Edge-Case Stress Testing**. Anyone can build the happy path; we battle-tested the broken paths:
+  > 
+  > **Edge Case 1: The 'Samosa Starvation' Trap**
+  > I threw this real scenario at the AI:
+  > *'It's 4:30 PM. There are 50 samosas ready on the counter shelf. A student pre-orders 50 samosas for 7:00 PM. A standard e-commerce cart immediately deducts stock to 0. Now a walk-in student stands at the counter at 4:30 PM, sees 50 samosas with his own eyes, but the screen says Out of Stock.'*
+  > 
+  > We debated how to handle this. The AI initially suggested canceling future orders. I rejected that. We brainstormed and agreed on the **Dual-Bucket Rule**:
+  > - **Bucket 1 (Shelf-Ready $\le$ 45 mins):** Deducts immediately from counter stock.
+  > - **Bucket 2 (Cook-Ahead Pipeline $>$ 45 mins):** Leaves shelf stock alone and triggers a scheduled batch alert for the kitchen 45 minutes prior to pickup.
+  > 
+  > **Edge Case 2: The Uncollected Food Waste**
+  > Then I introduced another edge case: *'What if a student books 4:30 PM, food gets cooked, but by 5:00 PM they still haven't picked it up?'*
+  > We designed an **Overdue Violation Engine**: after 30 minutes past the slot, an alert flashes on the owner's dashboard with the student's name, giving the owner a 1-click **'Blacklist & Restock'** action."
+
+---
+
+### Phase 4: What AI Got Wrong & Human Intervention (2:15 - 2:45 · 30 Seconds)
+*Focus: Showing critical thinking and where you corrected the AI.*
+
+* **What to Say:**
+  > "Where did the AI fail, and where did human oversight save the project?
+  > 
+  > 1. **Concurrency Race Conditions:** The AI initially checked slot limits in React frontend state. Under rapid clicks, two students could grab the 20th slot simultaneously. I caught this flaw and forced the validation into an atomic server-side gatekeeper with HTTP 409 rejections.
+  > 2. **UI Usability:** When the AI first built the stepper, it rendered cramped bullet text (`1. 1Confirmed 2. 2Preparing`). I intervened, guided the design hierarchy, and we rebuilt it into a smooth continuous gradient progress bar with clean flex receipts."
+
+---
+
+### Phase 5: The Takeaway & Closing (2:45 - 3:00 · 15 Seconds)
+*Focus: High-impact punchline.*
+
+* **What to Say:**
+  > "Our takeaway from this hackathon isn't just the 120 minutes of working code. It's the **repeatable methodology**:
+  > **Governance First ➔ Mutual Cross-Questioning ➔ Edge-Case Stress Testing ➔ Production Deployment.**
+  > 
+  > That is how AI transforms from an autocomplete tool into a true force-multiplier for engineers. Thank you!"
+
+---
+
+## 💡 Quick Cheat Sheet for Judges' Q&A
+
+| Judge Question | Your Winning Response |
+| :--- | :--- |
+| **"Did the AI write all this code?"** | *"AI generated the syntax, but I directed the architecture, defined the governance boundaries, caught the concurrency flaws, and provided the real-world edge cases like the Dual-Bucket inventory."* |
+| **"Why not just use prompts without rules/hooks?"** | *"Without rules and persistent context, AI hallucinates APIs, overwrites working code, and forgets constraints across turns. Governance is the difference between a toy demo and production-grade software."* |
+| **"What was your most effective prompt?"** | *"When I gave it the Samosa Starvation edge case: instead of asking 'write code', I asked 'Here is the failure scenario at 4:30 PM vs 7:00 PM. Analyze why typical inventory models fail and propose an architecture to isolate immediate vs pipeline demand.' That led directly to the Dual-Bucket pattern."* |

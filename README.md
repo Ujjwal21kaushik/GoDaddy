@@ -29,6 +29,22 @@ CanteenIQ replaces chaotic counter crowding with structured, high-throughput slo
 
 ---
 
+## 🧠 The Human-AI Collaborative Engineering Methodology
+The core differentiator of this project is not just *what* was built, but **HOW it was built** — using AI as a disciplined engineering peer rather than an unchecked code generator:
+
+1. **Governance & Rules Before Code:**
+   - Established strict boundaries via `rules/always/safety.md` and `agent/CONTEXT.md` to prevent hallucinations, state drift, and unauthorized file edits.
+2. **Mutual Cross-Questioning:**
+   - Instead of blind prompting, we engaged in bilateral architectural debates (e.g. challenging single-counter throughput, synthesizing 30 days of data to quantify the 15-minute lunch surge).
+3. **Edge-Case Stress Testing (Human Directed):**
+   - **The Samosa Starvation Trap:** Surfaced the 4:30 PM walk-in vs. 7:00 PM advance order conflict, co-designed the **Dual-Bucket Rule** to isolate ready shelf stock from cook-ahead pipeline.
+   - **The No-Show Wastage Trap:** Surfaced the 30-minute overdue uncollected order scenario, designed real-time owner alerts and 1-click blacklist & restock.
+4. **Correcting AI Oversights:**
+   - Caught and rejected AI's naive React-state slot counter (vulnerable to race conditions) and forced atomic server-side gatekeeping with HTTP 409 rejections.
+   - Iterated through UI hierarchy from unstyled text lists into smooth continuous gradient steppers and flex-aligned owner controls.
+
+---
+
 ## 🚀 Key Innovations & Algorithmic Features
 
 ### 1. 15-Minute Slot Capacity & Hard Gate Refusal

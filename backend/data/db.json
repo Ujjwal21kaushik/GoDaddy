@@ -222,11 +222,27 @@
       "total": 25,
       "discount": 0,
       "createdAt": 1795607032644,
-      "status": "confirmed",
+      "status": "collected",
       "history": [
         {
           "status": "confirmed",
           "at": 1795607032644
+        },
+        {
+          "status": "preparing",
+          "at": 1795612896134
+        },
+        {
+          "status": "almost",
+          "at": 1795612900044
+        },
+        {
+          "status": "ready",
+          "at": 1795612900992
+        },
+        {
+          "status": "collected",
+          "at": 1795612906920
         }
       ],
       "day": 0,
@@ -250,7 +266,7 @@
       "total": 50,
       "discount": 0,
       "createdAt": 1795606537036,
-      "status": "preparing",
+      "status": "collected",
       "history": [
         {
           "status": "confirmed",
@@ -259,6 +275,18 @@
         {
           "status": "preparing",
           "at": 1795607060989
+        },
+        {
+          "status": "almost",
+          "at": 1795612893831
+        },
+        {
+          "status": "ready",
+          "at": 1795612894492
+        },
+        {
+          "status": "collected",
+          "at": 1795612905781
         }
       ],
       "day": 0,
@@ -282,11 +310,27 @@
       "total": 50,
       "discount": 0,
       "createdAt": 1795606409413,
-      "status": "confirmed",
+      "status": "collected",
       "history": [
         {
           "status": "confirmed",
           "at": 1795606409413
+        },
+        {
+          "status": "preparing",
+          "at": 1795612895190
+        },
+        {
+          "status": "almost",
+          "at": 1795612897140
+        },
+        {
+          "status": "ready",
+          "at": 1795612897559
+        },
+        {
+          "status": "collected",
+          "at": 1795612906495
         }
       ],
       "day": 0,
