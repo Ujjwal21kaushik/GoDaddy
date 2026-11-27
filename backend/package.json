@@ -1,14 +1,15 @@
 {
-  "name": "canteeniq-backend",
+  "name": "orderquick-backend",
   "version": "1.0.0",
-  "description": "Backend API for CanteenIQ Rush Hour Queue Buster",
+  "description": "Backend API for OrderQuick campus canteen ordering system backed by MongoDB Atlas",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "generate-data": "node data-generator.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "cors": "^2.8.6",
-    "express": "^4.22.3"
+    "dotenv": "^18.0.10",
+    "express": "^4.22.3",
+    "mongoose": "^9.13.1"
   }
 }

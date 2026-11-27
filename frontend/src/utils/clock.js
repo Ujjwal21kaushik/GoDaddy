@@ -3,19 +3,24 @@ import { useEffect, useState } from 'react'
 
 const loadedAt = Date.now()
 
-// Real clock during canteen hours. Outside them, a demo clock starting at 11:30 AM so the app is always demoable.
-export function readClock() {
+// Real clock during canteen hours (handles after-midnight close > 1440). Outside them, a demo clock inside open hours.
+export function readClock(hours) {
+  const open = hours?.open ?? OPEN
+  const close = hours?.close ?? CLOSE
   const d = new Date()
-  const real = d.getHours() * 60 + d.getMinutes()
-  if (real >= OPEN && real < CLOSE - 30) return { min: real, demo: false }
-  return { min: 11 * 60 + 30 + Math.floor((Date.now() - loadedAt) / 60000), demo: true }
+  let real = d.getHours() * 60 + d.getMinutes()
+  if (close > 1440 && real < close - 1440) real += 1440
+  if (real >= open && real < close - 15) return { min: real, demo: false }
+  const demoStart = Math.max(open + 30, Math.min(11 * 60 + 30, close - 60))
+  return { min: demoStart + Math.floor((Date.now() - loadedAt) / 60000), demo: true }
 }
 
-export function useClock() {
-  const [c, setC] = useState(readClock)
+export function useClock(hours) {
+  const [c, setC] = useState(() => readClock(hours))
   useEffect(() => {
-    const t = setInterval(() => setC(readClock()), 15000)
+    setC(readClock(hours))
+    const t = setInterval(() => setC(readClock(hours)), 15000)
     return () => clearInterval(t)
-  }, [])
+  }, [hours?.open, hours?.close])
   return c
 }
